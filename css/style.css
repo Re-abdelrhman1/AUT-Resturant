@@ -1,0 +1,239 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 80px; /* تعويض ارتفاع شريط العنوان */
+    font-family: 'Poppins', sans-serif; /* إضافة مساحة تعويضية لارتفاع شريط العنوان */
+}
+
+header {
+    background-color: #333; /* لون الشريط */
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed; /* تثبيت الشريط */
+    top: 0; /* تثبيت في أعلى الصفحة */
+    z-index: 1000; /* الظهور فوق جميع العناصر */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+}
+
+.logo {
+    text-decoration: none;
+    color: #ffc70e; /* لون النص */
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem; /* تكبير حجم النص */
+    padding-right: 500px;
+    margin-left: 10px;
+}
+
+.navecation a {
+    color: #ffc70e;
+    text-decoration: none;
+    font-size: 1.2rem; /* تكبير حجم النص في الروابط */
+    font-weight: 500;
+    padding-left: 30px;
+    margin-right: 5px;
+    margin-left: 40px;
+}
+
+    .navecation a:hover {
+        color: white;
+    }
+
+/* تحسينات إضافية لعناصر الصفحة */
+.section {
+    padding: 100px 300px;
+}
+
+.main {
+    padding: 100px 300px;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    background-image: url("main.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #FFFFFA;
+}
+
+    .main h1 {
+        margin-top: 5px;
+        font-size: 1.4em;
+        font-weight: 700;
+        color: #FFFFFA;
+    }
+
+    .main p {
+        font-size: 1.3em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+.contentsocial {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    padding-top: 2em;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 4px;
+    padding-top: 4em;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+
+    .card .icon {
+        color: #3a6cf4;
+        font-size: 8em;
+        text-align: center;
+    }
+
+.icon {
+    border-radius: 15px;
+}
+
+.info {
+    text-align: center;
+}
+
+    .info h1 {
+        font-size: 1.2em;
+        font-weight: 700;
+        margin: 10px;
+        color: #ffc70e;
+    }
+
+.search-food {
+    justify-content: center;
+    padding: 320px 400px;
+    background-image: url("search-food2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.food-menu {
+    background-color: #ececec;
+    margin-top: 4px;
+    padding: 4%;
+}
+
+.food-menu-box {
+    display: flex;
+    border: 1px solid red;
+    margin: 3px;
+    width: 35%;
+    padding: 1px;
+    background-color: white;
+    float: left;
+    margin-left: 7em;
+    margin-top: 2em;
+}
+
+.food-btn:hover {
+    transform: scale(1.1);
+}
+
+.food-btn {
+    color: white;
+    background-color: #ffc70e;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 400;
+    display: inline-block;
+    padding: 0.815em 0.155em;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.img {
+    width: 20%;
+    border-radius: 15px;
+}
+
+.foodinfo {
+    position: center;
+}
+
+.order-now {
+    margin-top: 2em;
+    background-image: url("delivery.jpg");
+    position: center;
+    padding: 100px 300px;
+}
+
+.social-media {
+    background-color: #ffc70e;
+    color: white;
+    margin-bottom: 5em;
+    height: 20em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+}
+
+.trail {
+    background-color: white;
+    color: #ffc70e;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+/* For login user */
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+
+.headeru {
+    width: 30%;
+    margin: 50px auto 0px;
+    color: white;
+    background: #5F9EA0;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
+.loginuser {
+    border: 1px;
+    width: 40%;
+    margin: 9% auto;
+}
